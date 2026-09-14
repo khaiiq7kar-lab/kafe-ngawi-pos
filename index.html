@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAFE NGAWI POS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>KAFE NGAWI</h1>
+      <p>SISTEM KASIR POS</p>
+    </header>
+
+    <section class="form-card">
+      <label for="nama">Nama barang</label>
+      <input id="nama" type="text" placeholder="Contoh: Kopi">
+
+      <label for="harga">Harga</label>
+      <input id="harga" type="number" min="0" inputmode="numeric" placeholder="Contoh: 15000">
+
+      <button id="tambah" class="primary">TAMBAH BARANG</button>
+    </section>
+
+    <section class="receipt-card">
+      <h2>STRUK BELANJA</h2>
+      <div id="struk" class="receipt">Belum ada barang.</div>
+    </section>
+
+    <section class="promo">
+      <input id="promo" type="text" placeholder="Kode promo (opsional)">
+      <button id="pakaiPromo">PAKAI PROMO</button>
+    </section>
+
+    <section class="actions">
+      <button id="reset" class="secondary">RESET</button>
+      <button id="hitung" class="primary">SELESAI / HITUNG</button>
+    </section>
+  </main>
+
+  <div id="popup" class="popup hidden">
+    <div class="popup-box">
+      <h3 id="popupTitle"></h3>
+      <p id="popupMessage"></p>
+      <button id="popupClose" class="primary">OK</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
