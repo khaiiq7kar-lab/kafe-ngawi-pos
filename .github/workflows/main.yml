@@ -1,4 +1,4 @@
-name: Build KAFE NGAWI APK
+name: PROJECT KASIR SEDERHANA
 
 on:
   workflow_dispatch:
